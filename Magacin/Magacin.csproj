@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4555EE8-3795-404A-A104-1D6F75D71EAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Magacin</RootNamespace>
+    <AssemblyName>Magacin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\arist\Desktop\Magacin\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>32</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>889C19898832F78D29C595B6A5DC7B41B2925887</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Magacin_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HiAppHere_com_giannisgx89.morena.icons.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.12.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.12.0\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CiljeviMagacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CiljeviMagacina.Designer.cs">
+      <DependentUpon>CiljeviMagacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokument1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokument1.Designer.cs">
+      <DependentUpon>Dokument1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacijeOModulu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacijeOModulu.Designer.cs">
+      <DependentUpon>InformacijeOModulu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="IspraviCeneNaDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspraviCeneNaDan.Designer.cs">
+      <DependentUpon>IspraviCeneNaDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzborPrava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzborPrava.Designer.cs">
+      <DependentUpon>IzborPrava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzborRobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzborRobe.Designer.cs">
+      <DependentUpon>IzborRobe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KarticaNedeljneAkcije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KarticaNedeljneAkcije.Designer.cs">
+      <DependentUpon>KarticaNedeljneAkcije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komentar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Komentar.Designer.cs">
+      <DependentUpon>Komentar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komercijalno.cs" />
+    <Compile Include="KorisniciPrograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KorisniciPrograma.Designer.cs">
+      <DependentUpon>KorisniciPrograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Kviz.cs" />
+    <Compile Include="Kviz_Pitanje1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Pitanje1.Designer.cs">
+      <DependentUpon>Kviz_Pitanje1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Form.Designer.cs">
+      <DependentUpon>Kviz_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Grupa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Grupa.Designer.cs">
+      <DependentUpon>Kviz_Grupa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Grupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Grupe.Designer.cs">
+      <DependentUpon>Kviz_Grupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Pitanje1_Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Pitanje1_Novo.Designer.cs">
+      <DependentUpon>Kviz_Pitanje1_Novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Pregled_Pitanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Pregled_Pitanja.Designer.cs">
+      <DependentUpon>Kviz_Pregled_Pitanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Uredjivanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Uredjivanje.Designer.cs">
+      <DependentUpon>Kviz_Uredjivanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logovanje.Designer.cs">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menadzment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menadzment.Designer.cs">
+      <DependentUpon>Menadzment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxWithValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxWithValue.Designer.cs">
+      <DependentUpon>MessageBoxWithValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NedeljnaAkcija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NedeljnaAkcija.Designer.cs">
+      <DependentUpon>NedeljnaAkcija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoviKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoviKorisnik.Designer.cs">
+      <DependentUpon>NoviKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obavestenje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obavestenje.Designer.cs">
+      <DependentUpon>Obavestenje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podesavanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podesavanja.Designer.cs">
+      <DependentUpon>Podesavanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sredstva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sredstva.Designer.cs">
+      <DependentUpon>Sredstva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PocetakGodine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetakGodine.Designer.cs">
+      <DependentUpon>PocetakGodine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PravaKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PravaKorisnika.Designer.cs">
+      <DependentUpon>PravaKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledDana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledDana.Designer.cs">
+      <DependentUpon>PregledDana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PutanjaBaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutanjaBaze.Designer.cs">
+      <DependentUpon>PutanjaBaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kviz_Radi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kviz_Radi.Designer.cs">
+      <DependentUpon>Kviz_Radi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasporediUtovare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasporediUtovare.Designer.cs">
+      <DependentUpon>RasporediUtovare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobaAkcije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobaAkcije.Designer.cs">
+      <DependentUpon>RobaAkcije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sredstva_novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sredstva_novo.Designer.cs">
+      <DependentUpon>Sredstva_novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sredstvo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sredstvo.Designer.cs">
+      <DependentUpon>Sredstvo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SvediPcetnoStanjeNaMinimum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SvediPcetnoStanjeNaMinimum.Designer.cs">
+      <DependentUpon>SvediPcetnoStanjeNaMinimum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UporedjivanjePartneraPoBazama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UporedjivanjePartneraPoBazama.Designer.cs">
+      <DependentUpon>UporedjivanjePartneraPoBazama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrediTagModula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrediTagModula.Designer.cs">
+      <DependentUpon>UrediTagModula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UredjivanjeKolona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UredjivanjeKolona.Designer.cs">
+      <DependentUpon>UredjivanjeKolona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UspesnostMagacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UspesnostMagacina.Designer.cs">
+      <DependentUpon>UspesnostMagacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitMsg.Designer.cs">
+      <DependentUpon>WaitMsg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CiljeviMagacina.resx">
+      <DependentUpon>CiljeviMagacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokument1.resx">
+      <DependentUpon>Dokument1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacijeOModulu.resx">
+      <DependentUpon>InformacijeOModulu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspraviCeneNaDan.resx">
+      <DependentUpon>IspraviCeneNaDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzborPrava.resx">
+      <DependentUpon>IzborPrava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzborRobe.resx">
+      <DependentUpon>IzborRobe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KarticaNedeljneAkcije.resx">
+      <DependentUpon>KarticaNedeljneAkcije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Komentar.resx">
+      <DependentUpon>Komentar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorisniciPrograma.resx">
+      <DependentUpon>KorisniciPrograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Pitanje1.resx">
+      <DependentUpon>Kviz_Pitanje1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Form.resx">
+      <DependentUpon>Kviz_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Grupa.resx">
+      <DependentUpon>Kviz_Grupa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Grupe.resx">
+      <DependentUpon>Kviz_Grupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Pitanje1_Novo.resx">
+      <DependentUpon>Kviz_Pitanje1_Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Pregled_Pitanja.resx">
+      <DependentUpon>Kviz_Pregled_Pitanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Uredjivanje.resx">
+      <DependentUpon>Kviz_Uredjivanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logovanje.resx">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menadzment.resx">
+      <DependentUpon>Menadzment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxWithValue.resx">
+      <DependentUpon>MessageBoxWithValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NedeljnaAkcija.resx">
+      <DependentUpon>NedeljnaAkcija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoviKorisnik.resx">
+      <DependentUpon>NoviKorisnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obavestenje.resx">
+      <DependentUpon>Obavestenje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podesavanja.resx">
+      <DependentUpon>Podesavanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sredstva.resx">
+      <DependentUpon>Sredstva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetakGodine.resx">
+      <DependentUpon>PocetakGodine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PravaKorisnika.resx">
+      <DependentUpon>PravaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledDana.resx">
+      <DependentUpon>PregledDana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PutanjaBaze.resx">
+      <DependentUpon>PutanjaBaze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kviz_Radi.resx">
+      <DependentUpon>Kviz_Radi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasporediUtovare.resx">
+      <DependentUpon>RasporediUtovare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobaAkcije.resx">
+      <DependentUpon>RobaAkcije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sredstva_novo.resx">
+      <DependentUpon>Sredstva_novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sredstvo.resx">
+      <DependentUpon>Sredstvo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SvediPcetnoStanjeNaMinimum.resx">
+      <DependentUpon>SvediPcetnoStanjeNaMinimum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UporedjivanjePartneraPoBazama.resx">
+      <DependentUpon>UporedjivanjePartneraPoBazama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediTagModula.resx">
+      <DependentUpon>UrediTagModula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UredjivanjeKolona.resx">
+      <DependentUpon>UredjivanjeKolona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UspesnostMagacina.resx">
+      <DependentUpon>UspesnostMagacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitMsg.resx">
+      <DependentUpon>WaitMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Magacin_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment-png-22741.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discardIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HiAppHere_com_giannisgx89.morena.icons.ico" />
+    <None Include="Resources\detailsIcon.bmp" />
+    <Content Include="Resources\detaljiicon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
